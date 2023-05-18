@@ -1,4 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 :root {
   --Violet: hsl(257, 40%, 49%);
   --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400 600;
+  min-height: 100vh;
+}
+main {
+  min-height: 100vh;
+  padding: 30px 40px;
+  background-image: url("./images/bg-desktop.svg");
+  background-size: contain;
+  background-position: -8%;
+  background-repeat: no-repeat;
+  background-color: var(--Violet);
+}
+
+.logo {
+  width: 130px;
+  margin-bottom: 50px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-frame,
+.content-side {
+  flex-basis: 50%;
+}
+
+.ilustImage {
+  width: 100%;
+}
+
+.content-side {
+  padding-left: 30px;
+  color: #fff;
+}
+
+.header {
+  margin-top: 40px;
+  font-size: 32px;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.paragraphText {
+  font-size: 16px;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 9px 47px;
+  border-radius: 20px;
+  outline: none;
+  border: 0;
+  font-size: 12px;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: var(--Soft-Magenta);
+  color: #fff;
+}
+
+.socialIcons {
+  float: right;
+  display: flex;
+}
+
+.socialIcons span {
+  margin-left: 8px;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.socialIcons span .fa-brands {
+  font-size: 9px;
+}
+
+.socialIcons span:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  main {
+    background-image: url("./images/bg-mobile.svg");
+    background-size: cover;
+    background-position: 30% 12%;
+    background-repeat: no-repeat;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .image-frame,
+  .content-side {
+    width: 100%;
+  }
+
+  .content-side {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 22px;
+    text-align: center;
+  }
+  .paragraphText {
+    font-size: 14px;
+    text-align: center;
+    max-width: 290px;
+  }
+
+  button {
+    margin: auto;
+    text-align: center;
+  }
+
+  .socialIcons {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto 0;
+    float: unset;
+  }
 }
