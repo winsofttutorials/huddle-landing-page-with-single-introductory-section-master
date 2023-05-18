@@ -27,7 +27,7 @@ main {
 }
 
 .logo {
-  width: 130px;
+  width: 150px;
   margin-bottom: 50px;
 }
 
@@ -109,15 +109,19 @@ button:hover {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #fff;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   main {
     background-image: url("./images/bg-mobile.svg");
-    background-size: cover;
-    background-position: 30% 12%;
+    background-size: contain;
+    background-position: 20% -6%;
     background-repeat: no-repeat;
+  }
+
+  .logo {
+    width: 100px;
   }
 
   section {
